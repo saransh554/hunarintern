@@ -1,0 +1,186 @@
+// This Is Html Code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saransh jain Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<section id="home" class="section home">
+<h1>Welcome to My Portfolio</h1>
+<p>As an intern at Hunar Intern, I have had the opportunity to work in a dynamic and creative environment, contributing to various projects and honing my skills. Key highlights of my experience include:</p>
+<button id="read-more-btn"><i class="fas fa-info-circle"></i> Read More</button>
+Name : Saransh jain Assingment of Hunar Intern
+<p>My time at Hunar Intern has been instrumental in shaping my career path and equipping me with the skills and experiences necessary for future success in
+the tech industry.</p>
+</div>
+</section>
+<section id="about" class="section about">
+<h2>About Me</h2>
+<p>I am Saransh jain , a third-year B.Tech Computer Science and Engineering student at Amity University, Madhya Pradesh. I am passionate about leveraging technology to solve real-world
+problems and have developed a strong foundation in Data Structures and Algorithms (DSA)
+and
+Web Development. Currently, I am enhancing my skills and gaining practical experience through
+an internship at Hunar Intern.
+At Hunar Intern, I have had the opportunity to work on dynamic projects, collaborating with industry professionals and contributing to innovative solutions. My experience has
+strengthened
+my technical expertise and provided me with valuable insights into the tech industry.
+I am proficient in modern web development technologies and continuously seek to improve
+my
+knowledge and skills. I am dedicated, detail-oriented, and always eager to tackle new challenges.
+My goal is to build a successful career in the tech industry, where I can make meaningful contributions and drive impactful change.</p>
+</section>
+<section id="skills" class="section skills">
+<h2>Skills</h2>
+Name : Saransh jain Assingment of Hunar Intern
+<p>Web Development: Proficient in HTML, CSS, JavaScript, and modern frameworks like React
+and
+Angular.I have experience building responsive, user-friendly web applications that deliver an excellent user experience.
+Data Structures and Algorithms (DSA): Strong foundation in DSA, with expertise in implementing and optimizing complex algorithms. This skill allows me to solve intricate problems efficiently and effectively.
+Machine Learning: Knowledgeable in machine learning concepts and techniques, with hands-
+on
+experience using libraries such as TensorFlow, Keras, and scikit-learn. I have developed predictive models and performed data analysis to extract valuable insights.
+Video Editing: Skilled in video editing software including Adobe Premiere Pro and Final Cut Pro. I can create engaging, high-quality video content, enhancing visual communication and storytelling.</p>
+</section>
+<section id="projects" class="section projects">
+<h2>Projects</h2>
+<div class="project-card">
+<h3>Project 1</h3>
+<button class="view-details-btn">View Details</button>
+<div class="project-details">
+<p>During my internship at Hunar Intern, I worked on two significant projects that enhanced my web development skills.
+Online Course Website: I developed a comprehensive online course website using
+HTML and CSS. This project included creating a Home page, About Us page, Registration page, and Contact page. The website allows users to register for courses and view
+Name : Saransh jain Assingment of Hunar Intern
+detailed information about each course. This experience honed my front-end development skills and taught me the importance of user-friendly design and functionality.
+Netflix Clone: I created a simplified version of the Netflix streaming platform as a web application. This project involved displaying a list of movies or series, providing detailed information for selected titles, and simulating video playback. The user interface was designed to closely resemble the Netflix layout, ensuring an immersive user experience. This project helped me improve my skills in UI/UX
+design and web application development.
+</p>
+</div>
+</div>
+<!-- Add more project cards as needed -->
+</section>
+<section id="contact" class="section contact">
+<h2>Contact</h2>
+<p>Email: [SARANSH JAIN@gmail.com] Phone: +91 [7770986782]
+I am always open to discussing new opportunities, collaborations, or any inquiries you may have. Looking forward to connecting with you!</p>
+</section>
+<script src="scripts.js"></script>
+</body>
+</html>
+Name : Saransh jain Assingment of Hunar Intern
+//This Is Java Script Page
+// scripts.js
+// Smooth scrolling
+document.querySelectorAll('nav ul li a').forEach(anchor => { anchor.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth'
+});
+});
+});
+// Toggle more info in the introduction section
+document.getElementById('read-more-btn').addEventListener('click', function() { const moreInfo = document.getElementById('more-info');
+if (moreInfo.style.display === 'none') { moreInfo.style.display = 'block';
+this.innerHTML = '<i class="fas fa-info-circle"></i> Show Less';
+} else {
+moreInfo.style.display = 'none';
+this.innerHTML = '<i class="fas fa-info-circle"></i> Read More';
+}
+});
+// Toggle project details
+document.querySelectorAll('.view-details-btn').forEach(button => { button.addEventListener('click', function() {
+const projectDetails = this.nextElementSibling;
+Name : Saransh jain Assingment of Hunar Intern
+if (projectDetails.style.display === 'none') { projectDetails.style.display = 'block';
+this.textContent = 'Hide Details';
+} else {
+projectDetails.style.display = 'none'; this.textContent = 'View Details';
+}
+});
+});
+Name : Saransh jain Assingment of Hunar Intern
+// This Is CSS Code body {
+font-family: 'Arial', sans-serif; margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+}
+header {
+background-color: #4CAF50; color: white;
+padding: 10px 0; position: sticky; top: 0;
+z-index: 1000;
+}
+nav ul {
+list-style: none; margin: 0;
+padding: 0; display: flex;
+justify-content: center;
+}
+nav ul li {
+margin: 0 15px;
+}
+Name : Saransh jain Assingment of Hunar Intern
+nav ul li a { color: white;
+text-decoration: none; font-size: 18px;
+transition: color 0.3s;
+}
+nav ul li a:hover { color: #FFD700;
+}
+.section {
+padding: 60px 20px;
+border-bottom: 1px solid #ccc;
+}
+.home {
+background-color: #2196F3; color: white;
+text-align: center;
+}
+.about {
+background-color: #FF9800; color: white;
+}
+.skills {
+background-color: #9C27B0;
+Name : Saransh jain Assingment of Hunar Intern
+color: white;
+}
+.projects {
+background-color: #009688; color: white;
+}
+.contact {
+background-color: #FF5722; color: white;
+}
+#more-info { display: none;
+background-color: rgba(255, 255, 255, 0.9); padding: 10px;
+margin-top: 10px; border-radius: 5px; color: #333;
+}
+button {
+background-color: #FFC107; color: white;
+border: none; padding: 10px 20px; margin-top: 20px;
+cursor: pointer; font-size: 16px;
+Name : Saransh jain Assingment of Hunar Intern
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+button:hover {
+background-color: #FFA000;
+}
+.project-card {
+background-color: white; color: #333;
+margin-bottom: 20px; padding: 20px;
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.project-details { display: none;
+margin-top: 10px;
+}
