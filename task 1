@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Saransh" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Homepage</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3498db;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Saransh jain</h1>
+        <p>Hello! I'm Saransh jain, a software developer with a passion for creating personal homepage.</p>
+        <div>
+            <a href="https://github.com/Sa123ransh/ACC45DAYSOFCODE23/tree/0791a9eae82e7b9e7a42fd35bb9e2068530d807b" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/saransh-jain-b35021252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="jsaransh57@gmail.com">Email</a>
+        </div>
+    </div>
+</body>
+</html>
